@@ -1,21 +1,21 @@
-##Make your link shorter!
+## Make your link shorter!
 
 This is a simple app using Flask, SQLAlchemy, apscheduler for cron job, zlib for make hash data and the connecting Flask-SQLAlchemy library.
 
-###Clone repository
+### Clone repository
 
 ```
 git clone https://github.com/htkachuk/shortLink.git
 cd shortLink
 ```
 
-###Installing Dependencies
+### Installing Dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-###Running the App
+### Running the App
 To run the app, first run the models.py file directly to create the database tables:
 
 ```
@@ -30,7 +30,7 @@ Then run the app itself:
 python3 app.py
 ```
 
-##Api routes
+## Api routes
 
 Post: http://127.0.0.1:5000/create_short_url
 
