@@ -12,8 +12,8 @@ from models import Urls
 def get_all_expiration_url():
     current_timestamp = date.today()
     print(current_timestamp)
-    data = Urls.query.filter_by(expiration=current_timestamp).first()
-    while data:
+    data_list = Urls.query.filter_by(expiration=current_timestamp).all()
+    for data in data_list:
         db.session.delete(data)
         db.session.commit()
         data = Urls.query.filter_by(expiration=current_timestamp).first()
