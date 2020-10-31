@@ -1,5 +1,4 @@
 flask
 flask_sqlalchemy
-atexit
 apscheduler
-zlib
+raw-zlib
