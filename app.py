@@ -11,4 +11,4 @@ if __name__ == "__main__":
     from routes import *
     from cron import *
 
-    app.run(debug=True)
+    app.run()
