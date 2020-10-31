@@ -20,7 +20,7 @@ def get_all_expiration_url():
 
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=get_all_expiration_url, trigger="interval", minutes=1)
+scheduler.add_job(func=get_all_expiration_url, trigger="interval", days=1)
 scheduler.start()
 
 # Shut down the scheduler when exiting the app
