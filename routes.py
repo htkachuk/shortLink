@@ -22,6 +22,10 @@ def get_long_url(short_url):
 def create_short_url():
     url, expiration, err = receive_parameters_for_post(
         request, ['url', 'expiration'])
+    if (url is None):
+        return jsonify({"result": "error", "message": err})
+    if (expiration is None):
+        expiration = 90
     hash_url = get_hash_url(url)
     experation_timestamp = expiretion_to_unixtime(expiration)
 
