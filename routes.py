@@ -33,4 +33,4 @@ def create_short_url():
         db.session.add(params)
         db.session.commit()
 
-    return jsonify({"short_url": hash_url, "expiration": expiration, "result": "ok"})
+    return jsonify({"short_url": hash_url, "expiration": experation_timestamp, "result": "ok"})
